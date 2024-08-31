@@ -1,0 +1,6 @@
+#!C:\UNITY\assignment\venv\Scripts\python.exe
+import sys
+from blood_analyst_crew.main import run
+
+if __name__ == '__main__':
+    sys.exit(run())
