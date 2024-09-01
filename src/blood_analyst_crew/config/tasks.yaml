@@ -4,7 +4,7 @@ Analyze_Blood_Test:
     "{blood_report_text}"
 
     Instructions:
-    1. Review each test result in the "{blood_report_text}" report.
+    1. Review each test result in the report.
     2. Identify the test name, the value, and the normal range.
     3. Compare the test value to the normal range:
       - If the value is within the normal range, note that it is normal.
@@ -19,19 +19,17 @@ Analyze_Blood_Test:
 
 search_health_articles_task:
   description: >
-    Use an online search tool to find relevant health-related articles that match the extracted health indicators from 
-    the blood test report. The goal is to gather information that can help the person improve or maintain their health.
+    Use an online search tool to find relevant health-related articles based on the findings and analysis provided by the "Analyze_Blood_Test" task. The goal is to gather information that can help the person improve or maintain their health.
   expected_output: >
-    A list of health-related articles that are relevant to the findings from the blood test analysis, along with brief 
-    descriptions of each article.
+    A list of health-related articles that are relevant to the analysis results, along with brief descriptions of each article.
+
+
 
 generate_health_recommendations_task:
   description: >
-    Based on the analysis of the blood test report and the health-related articles found, provide personalized health 
-    recommendations. The goal is to offer actionable advice to help the person improve or maintain their health.
+    Provide health recommendations based on the articles found.
   expected_output: >
-    A set of personalized health recommendations tailored to the individual's blood test results and the information found 
-    in the health articles.
+    Health recommendations with links to the articles..
 
 
 send_email_task:

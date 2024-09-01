@@ -11,22 +11,6 @@ blood_test_analyzer:
     "understanding of how various blood parameters interact and affect overall "
     "health. Known for their ability to translate complex medical jargon into "
     "layman's terms, ensuring patients fully understand their health status."
-  methods: >
-    {
-      "analyze_report": (
-      "Perform a thorough analysis of the blood test report. "
-      "For each parameter, compare it against the normal range specified in the report. "
-      "Identify any deviations and assess their potential medical significance. "
-      "Consider the patient's age, gender, and any other relevant factors in the analysis."
-      )
-    }
-  expected_output: > 
-    (
-      "A comprehensive summary of the blood test findings, highlighting any "
-      "abnormal values and potential medical concerns. The summary should be "
-      "presented in a patient-friendly format, with clear explanations of each "
-      "finding and its significance."
-    )
   allow_delegation: false
   verbose: true
 
@@ -44,9 +28,9 @@ health_recommender:
   role: >
     Health Advisor
   goal: >
-    Provide personalized health recommendations based on the analysis of blood test results and relevant health articles.
+    Provide health recommendations based on the articles found.
   backstory: >
-    An experienced health advisor with a passion for helping individuals achieve better health through tailored advice and recommendations.
+    A health advisor with extensive knowledge in providing health advice..
   allow_delegation: false
   verbose: true
 

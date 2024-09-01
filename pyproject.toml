@@ -15,4 +15,3 @@ blood_analyst_crew = "blood_analyst_crew.main:run"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-

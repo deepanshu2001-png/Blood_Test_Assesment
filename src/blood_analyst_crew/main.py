@@ -5,6 +5,7 @@ from PyPDF2 import PdfReader
 
 
 
+
 from blood_analyst_crew.crew import HealthAdvisorCrew
 
  
@@ -30,7 +31,10 @@ def run():
     inputs = {
         'blood_report_text': extracted_text  # Use the extracted text
     }
-    HealthAdvisorCrew().crew().kickoff(inputs=inputs)
+    crew_instance = HealthAdvisorCrew()
+    result = crew_instance.crew().kickoff(inputs=inputs)
+    crew_instance.create_and_send_pdf(result, "kadamdeep310@gmail.com")
+    print("PDFs generated and saved in the root directory.")
 
 
 if __name__ == "__main__":
